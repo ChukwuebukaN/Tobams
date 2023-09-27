@@ -1,4 +1,35 @@
 module.exports = {
-  root: true,
-  extends: '@react-native',
+  env: {
+    commonjs: true,
+    node: true,
+    browser: true,
+    es2021: true,
+  },
+  extends: [
+    'plugin:react/recommended',
+    'standard-with-typescript',
+    'airbnb-typescript/base',
+    'prettier',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/typescript',
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: './tsconfig.eslint.json',
+  },
+  plugins: ['react', '@typescript-eslint', 'import', 'prettier'],
+  rules: {
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/restrict-plus-operands': 'off',
+    '@typescript-eslint/no-misused-promises': 'off',
+    'react/prop-types': 0,
+    'no-console': 'warn',
+    'no-unused-expressions': 'error',
+    'no-unused-vars': 'error',
+    'no-undefined': 'error',
+  },
 };

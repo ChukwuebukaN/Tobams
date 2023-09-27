@@ -2,7 +2,7 @@
 <h3 align='center'>Tobams eCommerce Platform</h3>
 <br/>
 <p align="center">
-  <img width="400" height="400" title="Closer Health Logo" alt="Closer Health Logo" src="https://github.com/ChukwuebukaN/Tobams/assets/64613243/2c98bcf4-c258-4549-8791-4a7b3b5eb03b">
+  <img width="400" height="400" title="Tobams Health Logo" alt="Tobams Health Logo" src="https://github.com/ChukwuebukaN/Tobams/assets/64613243/2c98bcf4-c258-4549-8791-4a7b3b5eb03b">
 </p>
 <br/>
 <h1>Getting started</h1>
