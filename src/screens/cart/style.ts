@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { Platform, StyleSheet } from "react-native";
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 import { RFValue } from "react-native-responsive-fontsize";
 import Theme from "../../constants/theme";
@@ -77,6 +77,14 @@ const styles = StyleSheet.create({
   },
   checkoutButton: {
     marginTop: hp("4%"),
+    ...Platform.select({
+      ios: {
+        marginBottom: hp("17%"),
+      },
+      android: {
+        // marginBottom: hp("0.7%"),
+      },
+    }),
   },
   buttonStyle: {
     width: wp("90%"),

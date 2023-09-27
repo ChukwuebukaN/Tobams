@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   headerArrowLeftIcon: {},
   headerArrowLeft: {
     width: wp("9.60%"),
-    height: hp("4.07%"),
+    height: hp("4.5%"),
     backgroundColor: colors.tobamsWhite,
     borderColor: colors.tobamsBorderGrey,
     borderRadius: 8,

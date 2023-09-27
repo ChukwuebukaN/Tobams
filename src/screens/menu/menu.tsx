@@ -93,12 +93,10 @@ function Menu({ navigation }) {
           inputMarginBottom="3%"
         />
       </View>
-      <AppLayout
-        headerTitle="Menu"
-        // onBackPress={() => navigation.navigate(Screens.MENU)}
-        bodyStyle={{ paddingTop: "20%", paddingBottom: "20%" }}
-      >
-        <ProductCard />
+      <AppLayout headerTitle="Menu" bodyStyle={{ paddingTop: "20%", paddingBottom: "20%" }}>
+        <View style={styles.productsContainer}>
+          <ProductCard />
+        </View>
       </AppLayout>
     </>
   );

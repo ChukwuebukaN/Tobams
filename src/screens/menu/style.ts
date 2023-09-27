@@ -47,10 +47,21 @@ const styles = StyleSheet.create({
     width: wp("1%"),
     zIndex: 20,
   },
+  productsContainer: {
+    ...Platform.select({
+      ios: {
+        marginBottom: hp("10%"),
+      },
+      android: {
+        // marginBottom: hp("0.7%"),
+      },
+    }),
+  },
   grid: {
     flex: 1,
     alignItems: "",
     flexDirection: "column",
+    ma: hp("0.7%"),
     marginVertical: hp("0.7%"),
   },
   cardContainer: {
@@ -94,6 +105,14 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignSelf: "center",
     justifyContent: "space-between",
+    ...Platform.select({
+      ios: {
+        marginTop: hp("1.5%"),
+      },
+      android: {
+        marginTop: hp("1%"),
+      },
+    }),
   },
   buttonStyle: {
     // bottom: wp("35.40%"),

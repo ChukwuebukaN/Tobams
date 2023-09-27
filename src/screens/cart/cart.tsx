@@ -42,7 +42,7 @@ function Cart({ navigation }) {
       <AppLayout
         onBackPress={() => navigation.goBack()}
         headerTitle="Cart"
-        bodyStyle={{ paddingTop: "0%", paddingBottom: "35%" }}
+        bodyStyle={{ paddingTop: "0%", paddingBottom: "5%" }}
       >
         <CartCard />
         <View style={styles.checkoutButton}>
